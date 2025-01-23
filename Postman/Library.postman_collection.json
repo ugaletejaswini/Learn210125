@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "4e459cdf-96e2-4de6-85d5-d0ceca9802d7",
+		"name": "Library",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "38642840"
+	},
+	"item": [
+		{
+			"name": "AddBook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\"name\":\"Learn Appium Automation with Java\",\r\n\"isbn\":\"bcd\",\r\n\"aisle\":\"590\",\r\n\"author\":\"John foe\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://rahulshettyacademy.com/Library/Addbook.php"
+			},
+			"response": []
+		},
+		{
+			"name": "GetBook",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://rahulshettyacademy.com/Library/GetBook.php?AuthorName=John foe",
+					"protocol": "https",
+					"host": [
+						"rahulshettyacademy",
+						"com"
+					],
+					"path": [
+						"Library",
+						"GetBook.php"
+					],
+					"query": [
+						{
+							"key": "AuthorName",
+							"value": "John foe"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
